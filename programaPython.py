@@ -4,7 +4,7 @@
 import random
 
 numAleatori = random.randint(1,10)
-
+#Creació de menú
 def MenuOpcions():
     print('''
 ENTRA 'a' PER ADIVINAR UN NÚMERO
@@ -16,6 +16,7 @@ ENTRA 'o' PER SORTIR
 
 MenuOpcions()
 tecla=None
+#Creació de les accions
 while(tecla!='o'):
     tecla=input('Entra una tecla: ')
     if (tecla=='a'):
