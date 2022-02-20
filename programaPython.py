@@ -19,18 +19,21 @@ tecla=None
 while(tecla!='o'):
     tecla=input('Entra una tecla: ')
     if (tecla=='a'):
-        numUsuari=input("ENTRA UN NÚMERO DEL 1 AL 10 I ET DIRÉ SI L'HAS ENCERTAT: ")
+        print("ENTRA UN NÚMERO DEL 1 AL 10 I ET DIRÉ SI L'HAS ENCERTAT: ")
+        numUsuari=int(input())
         while numAleatori != numUsuari:
-            numUsuari=input("NO L'HAS ENCERTAT, TORNA-HO A PROVAR: ")
+            print("NO L'HAS ENCERTAT, TORNA-HO A PROVAR: ")
+            numUsuari=int(input())
+        print("L'HAS ENCERTAT!!")
     if (tecla=='b'):
-        any = input("ENTRA UN ANY: ")
+        any = int(input("ENTRA UN ANY: "))
         if (any % 4 == 0 and any % 100 != 0 or any % 400 == 0):
             print('ÉS UN ANY DE TRASPÀS')
         else:
             print('NO ÉS UN ANY DE TRASPÀS')
     if (tecla=='c'):
         i = 2
-        numero = input('ENTRA UN NÚMERO: ')
+        numero = int(input('ENTRA UN NÚMERO: '))
         while numero % i != 0 and i<= numero /2:
             i+=1
         if (numero%i ==0):
@@ -38,8 +41,8 @@ while(tecla!='o'):
         else:
             print('ÉS UN NÚMERO PRIMER')
     if (tecla=='d'):
-        primerNumero=input('ENTRA UN NÚMERO:')
-        segonNumero=input('ENTRA UN SEGON NÚMERO: ')
+        primerNumero=int(input('ENTRA UN NÚMERO:'))
+        segonNumero=int(input('ENTRA UN SEGON NÚMERO: '))
         while segonNumero !=0:
             aux=segonNumero
             segonNumero=primerNumero%segonNumero
